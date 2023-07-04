@@ -1,0 +1,18 @@
+<view id="content">
+  <scroll-view scroll-y="{{true}}" style="height: 450px; border: 1px solid gray; padding: 10px">
+    <block a:for="{{ termsOfService }}" a:for-item="tos">
+      <view>
+        <view class="section">
+          <text>{{tos.section}}</text>
+        </view>
+        <view class="content">
+          <text>{{tos.content}}</text>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="checkbox">
+    <checkbox value="true" onChange="checkChange" /> <text>I agree with Terms of Service</text>
+  </view>
+  <button disabled="{{!checkbox}}" onTap="acceptTos">Accept</button>
+</view>

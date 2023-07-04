@@ -1,0 +1,77 @@
+.main-container{
+  display: flex;
+  justify-content: center;
+  margin: -5vh 0px 2vh 0px;
+  min-height: fit-content;
+}
+
+.main-image{
+  background: rgba(128, 128, 128, 0.362);
+  height: 150px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.title-container{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 7px;
+}
+
+.owner-name{
+  font-weight: bold;
+  font-size: xx-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: start;
+}
+
+.owner-name-id{
+  font-weight: 500;
+  font-size: medium;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: start;
+}
+
+.owner-url{
+  text-align: start;
+  font-weight: 500;
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+.px-add{
+  display: flex;
+  justify-content: start;
+  margin: 10px 7px;
+  align-items: flex-end;
+  gap: 7px
+}
+
+.img-2x {
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+}  
+
+button{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin: 10px 0px;
+  background-color: rgba(128, 128, 128, 0.274);
+  border-radius: 15px;
+  font-weight: 900;
+}
+
+.content{
+  display: flex;
+}
+
+.load-btn{
+  font-family: monospace;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}

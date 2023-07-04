@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "content-view": "/page/component/content-view/content-view",
+    "content-view2": "/page/component/content-view-2/content-view-2"
+  }
+}

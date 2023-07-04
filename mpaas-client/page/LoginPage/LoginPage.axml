@@ -1,0 +1,20 @@
+<view class="main-container">
+  <container>
+    <form onSubmit="handleSubmit">
+      <view class="form-item">
+        <input type="text" placeholder="Email" value="{{email}}" onInput="handleEmailInput" />
+      </view>
+      <view class="form-item">
+        <input
+          password
+          placeholder="Password"
+          value="{{password}}"
+          onInput="handlePasswordInput"
+        />
+      </view>
+      <view class="form-item">
+        <button type="primary" form-type="submit">Login</button>
+      </view>
+    </form>
+  </container>
+</view>

@@ -1,0 +1,17 @@
+
+button{
+  background: color;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  margin: 0px 20px;
+}
+
+.input {
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
+}

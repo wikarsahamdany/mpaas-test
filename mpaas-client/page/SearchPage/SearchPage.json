@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "PixUP!",
+  "usingComponents": {
+    "input": "antd-mini/es/Input/index",
+    "icon": "antd-mini/es/Icon/index"
+  },
+  "pullRefresh": false,
+  "allowsBounceVertical": "NO"
+}

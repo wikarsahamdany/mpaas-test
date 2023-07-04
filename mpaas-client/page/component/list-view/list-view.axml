@@ -1,0 +1,6 @@
+<view class="card-box" onTap="goDetail" data-id={{news.id}}>
+  <view class="card shadow">
+    <image mode="scaleToFill" src="{{news.thumb}}" />
+  </view>
+  <text class="title">{{news.title}}</text>
+</view>

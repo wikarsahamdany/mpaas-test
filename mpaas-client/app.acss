@@ -1,0 +1,15 @@
+page {
+  background-color: rgb(220, 220, 220);
+  box-sizing: border-box;
+  padding-top: 150rpx;
+}
+
+.page {
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+  font-size: 24rpx;
+  flex: 1;
+}
+
+.page-description {
+  margin-bottom: 32rpx;
+}

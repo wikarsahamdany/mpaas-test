@@ -1,0 +1,17 @@
+<view class="main-content">
+  <view class="content">
+    <view>
+      <block a:for="{{ dataSearchEven }}" a:for-item="searchPic">
+        <content-view search={{true}} searchPic={{searchPic}}></content-view>
+      </block>
+    </view>
+    <view>
+      <block a:for="{{ dataSearchOdd }}" a:for-item="searchPic">
+        <content-view2 search={{true}} searchPic={{searchPic}}></content-view2>
+      </block>
+    </view>
+  </view>
+  <view a:if="{{ loadText }}" class="load-btn">
+    <image mode="aspectFill" src="{{loadText}}" />
+  </view>
+</view>

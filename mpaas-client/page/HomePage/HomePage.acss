@@ -1,0 +1,21 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 5vh 5px;
+}
+
+.content{
+  display: flex;
+}
+
+.load-btn{
+  font-family: monospace;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.load-btn:hover{
+  opacity: 1;
+}

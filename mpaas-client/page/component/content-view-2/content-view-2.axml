@@ -1,0 +1,15 @@
+<view a:if="{{ home }}" class="box-content">
+  <image mode="widthFix" src="{{pic.src.medium}}" onTap="goDetail" data-id={{pic.id}} />
+</view>
+<view a:elif="{{ search }}" class="box-content">
+  <image mode="widthFix" src="{{searchPic.src.medium}}" onTap="goDetail" data-id={{searchPic.id}} />
+</view>
+<view a:elif="{{ detail }}" class="box-content">
+  <image
+    mode="widthFix"
+    src="{{pic.src.medium}}"
+    onTap="goDetail"
+    data-id={{searchPic.id}}
+    data-alt={{pic.alt}}
+  />
+</view>

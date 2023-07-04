@@ -1,0 +1,28 @@
+#content{
+  margin: 20px 15px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section{
+  font-weight: 800;
+  font-size: large;
+  margin-bottom: 5px;
+}
+
+.content{
+  font-weight: 500;
+  font-size: medium;
+  margin-bottom: 10px;
+}
+
+checkbox{
+  border: black solid 1px;
+  margin-right: 5px;
+}
+
+.checkbox{
+  display: flex;
+  justify-content: center;
+}

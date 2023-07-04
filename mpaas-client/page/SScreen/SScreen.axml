@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="container-logo">
+    <text class="top-logo">Craftz</text>
+    <text class="bot-logo">World</text>
+  </view>
+</view>

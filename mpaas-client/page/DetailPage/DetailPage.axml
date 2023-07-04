@@ -1,0 +1,32 @@
+<view a:if="{{ !isLoading }}">
+  <view class="main-container">
+    <view class="content-img">
+      <image class="main-image" mode="widthFix" src="{{detailPhoto.src.large2x}}" />
+    </view>
+  </view>
+  <view class="title-container">
+    <text class="owner-name">{{detailPhoto.photographer}}</text>
+    <text class="owner-name-id">ID:{{detailPhoto.id}}</text>
+  </view>
+  <view class="px-add">
+    <text>{{detailPhoto.alt}}</text>
+  </view>
+  <view>
+    <button onTap="goWeb" size="default">Visit</button>
+  </view>
+  <view class="content">
+    <view>
+      <block a:for="{{ picsDataOdd }}" a:for-item="pic">
+        <content-view detail={{true}} pic={{pic}} onPicTap="{{goDetail}}"></content-view>
+      </block>
+    </view>
+    <view>
+      <block a:for="{{ picsDataEven }}" a:for-item="pic">
+        <content-view2 detail={{true}} pic={{pic}} onPicTap="{{goDetail}}"></content-view2>
+      </block>
+    </view>
+  </view>
+  <view a:if="{{ loadText }}" class="load-btn">
+    {{loadText}}
+  </view>
+</view>

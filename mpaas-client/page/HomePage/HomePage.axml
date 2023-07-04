@@ -1,0 +1,23 @@
+  <view class="main-content">
+    <view class="content">
+      <view>
+        <block a:for="{{ picsDataOdd }}" a:for-item="pic">
+          <content-view home={{true}} pic={{pic}} onPicTap="{{goDetail}}"></content-view>
+        </block>
+      </view>
+      <view>
+        <block a:for="{{ picsDataEven }}" a:for-item="pic">
+          <content-view2 home={{true}} pic={{pic}} onPicTap="{{goDetail}}"></content-view2>
+        </block>
+      </view>
+    </view>
+    <view a:if="{{ loadText }}" class="load-btn">
+      {{loadText}}
+    </view>
+    <!-- <view class="content">
+      <block a:for="{{ picsData.photos }}" a:for-item="pic">
+        <content-view2 home={{true}} pic={{pic}} onPicTap="{{goDetail}}"></content-view2>
+      </block>
+    </view> -->
+    <!--<block a:for="{{ newsData }}" a:for-item="news"><list-view news={{news}}></list-view></block> -->
+  </view>

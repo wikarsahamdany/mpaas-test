@@ -1,0 +1,64 @@
+<view class="page">
+  <view class="page-section">
+    <view class="carousel-container">
+      <swiper
+        style="height:150px"
+        class="demo-swiper"
+        indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}"
+        vertical="{{vertical}}"
+        interval="{{interval}}"
+        circular="{{circular}}"
+        duration="{{duration}}"
+      >
+        <block a:for="{{picsData}}" a:for-item="pics">
+          <swiper-item>
+            <image class="carousel" src="{{pics.src.portrait}}" onTap="goDetail" data-id={{pics.id}} />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+
+  <view class="container">
+    <input
+      placeholder="Search for ideas"
+      onChange="onChange"
+      className="search-bar"
+      focusClassName="search-bar-focus"
+      confirm-type="search"
+      allowClear
+      onFocus="onfocus"
+      onConfirm="onConfirm"
+    >
+      <icon slot="prefix" type="SearchOutline" />
+    </input>
+    <view a:if="{{ isFocus }}" style="cursor:pointer" onTap="cancelTap" class="cancel">
+      Cancel
+    </view>
+  </view>
+
+  <view class="text-bridge">
+    <text>Creator Hacks</text>
+  </view>
+
+  <scroll-view scroll-x="{{true}}" style="white-space: nowrap; height: 200px;">
+    <block a:for="{{storyData}}" a:for-item="story">
+        <image class="card-image" mode="aspectFill" onTap="goDetail" src="{{story.src.medium}}" data-id={{story.id}} data-alt={{story.alt}} />
+    </block>
+  </scroll-view>
+
+  <view class="text-bridge">
+    <text>Popular on PixUP!</text>
+  </view>
+
+  <view class="second-content">
+    <block a:for="{{ideaData}}" a:for-item="idea">
+        <view class="second-card">
+          <text class="own-image">{{idea.photographer}}</text>
+          <image class="second-card-img" mode="aspectFill" src="{{idea.src.large}}" onTap="goWeb" data-url={{idea.url}}  />
+        </view>
+    </block>
+  </view>
+    
+</view>
